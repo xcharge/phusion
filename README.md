@@ -10,3 +10,5 @@ The implemented Phusion applications:
 * **TJDParking**: parking service, 停简单.
 * **LingWu**: car wash service, 领悟物联网洗车服务.
 * **EZViz**: video surveillance service, 萤石云.
+* **XChargelock**: parkLock service, 智充车位锁.
+* **Dingding**: parkLock service, 丁丁地锁.
