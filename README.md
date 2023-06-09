@@ -11,7 +11,7 @@ The implemented Phusion applications:
 | SiwoParking | Application | parking service, 思沃（万向智控）停车                |
 | StaticTraffic | Application | parking service, 静态交通停车                    |
 | TJDParking | Application | parking service, 停简单                       |
-| Wit | Application | parking service, 慧停车                       |
+| WitParking | Application | parking service, 慧停车                       |
 | LingWu | Application | car wash service, 领悟物联网洗车服务                |
 | EZViz | Application | video surveillance service, 萤石云            |
 | XChargeParkingLock | Application | gateway for parking lock services, 智充车位锁接口 |
