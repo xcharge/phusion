@@ -13,6 +13,7 @@ The implemented Phusion applications:
 | TJDParking         | Application | parking service, 停简单                       |
 | WitParking         | Application | parking service, 慧停车                       |
 | GreenTown          | Application | parking service, 绿城停车                      |
+| HikParking         | Application | parking service, 海康云停车                     |
 | LingWu             | Application | car wash service, 领悟物联网洗车服务                |
 | EZViz              | Application | video surveillance service, 萤石云            |
 | XChargeParkingLock | Application | gateway for parking lock services, 智充车位锁接口 |
