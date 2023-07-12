@@ -12,3 +12,4 @@ The implemented Phusion applications:
 * **EZViz**: video surveillance service, 萤石云.
 * **XChargelock**: parkLock service, 智充车位锁.
 * **Dingding**: parkLock service, 丁丁地锁.
+* **Jslife**: parking service, 捷顺停车.
