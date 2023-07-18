@@ -28,16 +28,16 @@ public class Transformer {
      * <p>
      * Output message format:
      * {
-     *  "appId": String, // 应用id
-     *  "outDeviceNum": String, // 地锁编号
-     *  "timeStamp": String, // 时间戳
-     *  "nonceStr": String, // 随机字符串
-     *  "signType": String, // 签名类型默认 MD5
+     * "appId": String, // 应用id
+     * "outDeviceNum": String, // 地锁编号
+     * "timeStamp": String, // 时间戳
+     * "nonceStr": String, // 随机字符串
+     * "signType": String, // 签名类型默认 MD5
      * <p>
-     *  //以下参数只有升降锁操作才会存在
-     *  "outLiftNum": String, // 升降锁事务id（唯一字符串）
-     *  "liftKind": String, //
-     *  "ip": String, // ip地址
+     * //以下参数只有升降锁操作才会存在
+     * "outLiftNum": String, // 升降锁事务id（唯一字符串）
+     * "liftKind": String, //
+     * "ip": String, // ip地址
      * }
      */
     public static String translateRequestMessage(JSONObject msg, String appId, String secret, String reqId) throws Exception {
@@ -60,14 +60,14 @@ public class Transformer {
     /**
      * Original message format:
      * {
-     *  "resCode": Integer, // 0 表示处理成功，其它值表示处理失败
-     *  "resMsg": String // 处理失败时填写失败原因描述
+     * "resCode": Integer, // 0 表示处理成功，其它值表示处理失败
+     * "resMsg": String // 处理失败时填写失败原因描述
      * }
      * <p>
      * Output message format:
      * ParkingLock.performAction.outputMessage
      */
-    public static JSONObject translateResponseMessage(JSONObject msg,JSONObject action) {
+    public static JSONObject translateResponseMessage(JSONObject msg, JSONObject action) {
         JSONObject result = new JSONObject();
         if (msg == null) msg = new JSONObject();
 
@@ -81,9 +81,9 @@ public class Transformer {
         result.put("code", code == 0 ? "ok" : "" + code);
         result.put("desc", msg.getString("errMsg"));
 
-        if(code==0 && "message".equals(action.getString("action"))) {
+        if (code == 0 && "message".equals(action.getString("action"))) {
             JSONObject info = translateStatus(msg);
-            result.put("info",info);
+            result.put("info", info);
         }
         return result;
     }
@@ -91,19 +91,19 @@ public class Transformer {
     /**
      * Original message format:
      * {
-     *  "appId": String, // 商户ID
-     *  "event": String,//通知事件
-     *  "lockState": String, // 地锁状态
-     *  "parkingState": String, // 车位状态
-     *  "carNumber": String, // 车牌号
-     *  "lockNum": String, // 地锁编号
-     *  "outDeviceNum": String, // 商户设备编号（枪编号），与系统地锁编号一一对应，需在调用前录入
-     *  "isOutLift": String, // 是否商户主动升降导致的信息通知 0-不是主动升降 1-是主动升降
-     *  "outLiftNum": String, // 商户升降锁编号，商户系统内唯一，当outLiftType=1时返回，升降锁编号与升降锁信息一一对应，可通过该编号获取升降信息
-     *  "liftTime": String, // 请求升降时间 格式：yyyyMMddHHmmss
-     *  "timeStamp": Numeric, // 请求发起时间戳 格式：yyyyMMddHHmmss
-     *  "nonceStr": Integer, // 随机字符串
-     *  "sign": Long, // 签名，详见签名生成算法
+     * "appId": String, // 商户ID
+     * "event": String,//通知事件
+     * "lockState": String, // 地锁状态
+     * "parkingState": String, // 车位状态
+     * "carNumber": String, // 车牌号
+     * "lockNum": String, // 地锁编号
+     * "outDeviceNum": String, // 商户设备编号（枪编号），与系统地锁编号一一对应，需在调用前录入
+     * "isOutLift": String, // 是否商户主动升降导致的信息通知 0-不是主动升降 1-是主动升降
+     * "outLiftNum": String, // 商户升降锁编号，商户系统内唯一，当outLiftType=1时返回，升降锁编号与升降锁信息一一对应，可通过该编号获取升降信息
+     * "liftTime": String, // 请求升降时间 格式：yyyyMMddHHmmss
+     * "timeStamp": Numeric, // 请求发起时间戳 格式：yyyyMMddHHmmss
+     * "nonceStr": Integer, // 随机字符串
+     * "sign": Long, // 签名，详见签名生成算法
      * }
      * <p>
      * Output message format:
@@ -112,7 +112,7 @@ public class Transformer {
     public static JSONObject translateMessage(Map<String, String> msg) {
         JSONObject msgObj = new JSONObject(msg);
         JSONObject result = new JSONObject();
-        result.put("joinId",msg.get("joinId"));
+        result.put("joinId", msg.get("joinId"));
         result.putAll(translateStatus(msgObj));
         return result;
     }
@@ -179,7 +179,7 @@ public class Transformer {
         }
 
         if (parkingState == 0) {
-            carParking = "unknown";
+            carParking = lockState == 2 ? "true" : "unknown";
         } else if (parkingState == 1) {
             carParking = "true";
         } else if (parkingState == 2) {
@@ -194,20 +194,20 @@ public class Transformer {
         result.put("errorInfo", errorInfo);
         result.put("lockReleased", lockReleased);
         result.put("batteryPower", batteryPower);
-        return  result;
+        return result;
     }
 
     /**
      * Original message format:
      * {
-     *  "code": String, // ok 表示处理成功，其它值表示处理失败
-     *  "desc": String // 处理失败时填写失败原因描述
+     * "code": String, // ok 表示处理成功，其它值表示处理失败
+     * "desc": String // 处理失败时填写失败原因描述
      * }
      * <p>
      * Output message format:
      * {
-     *  "errCode": int, // 0 表示处理成功，其它值表示处理失败
-     *  "errMsg": String // 处理失败时填写失败原因描述
+     * "errCode": int, // 0 表示处理成功，其它值表示处理失败
+     * "errMsg": String // 处理失败时填写失败原因描述
      * }
      */
     public static JSONObject translatePCResponseMessage(JSONObject msg) {
