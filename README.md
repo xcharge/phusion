@@ -20,3 +20,4 @@ The implemented Phusion applications:
 | XChargeParkingLock | Application | gateway for parking lock services, 智充车位锁接口 |
 | DingDingLock       | Application | parking lock service, 丁丁地锁                 |
 | Jslife             | Application | parking lock service, 捷顺停车                 |
+| zhiansichuang      | Application | parking lock service, 智安思创                 |
