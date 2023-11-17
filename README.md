@@ -21,3 +21,4 @@ The implemented Phusion applications:
 | DingDingLock       | Application | parking lock service, 丁丁地锁                 |
 | Jslife             | Application | parking lock service, 捷顺停车                 |
 | zhiansichuang      | Application | parking lock service, 智安思创                 |
+| LitaLock           | Application | parking lock service, 常成利他                 |
