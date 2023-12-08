@@ -48,8 +48,8 @@ public class ApplicationTest {
         applicationConfig = "{\"serviceUrl\": \"https://open.ys7.com/api/lapp\"}";
 
         connectionConfig = "{" +
-                "\"appKey\": \"b925a43d906544d99d801027ddc72acc\", " +
-                "\"appSecret\": \"34c43297d8e610a51f7de3f9a9f8ac45\"" +
+                "\"appKey\": \"b925a43d90\", " +
+                "\"appSecret\": \"34c43297d8e6\"" +
                 "}";
     }
 

@@ -37,8 +37,8 @@ public class TokenTest {
 //                "}";
 //
 //        String connectionConfig = "{" +
-//                "\"OperatorID\": \"sl1686013294833oAsB\"," +
-//                "\"OperatorSecret\": \"51F6F6CB7FD47B6EDFB29CB025261A44\"" +
+//                "\"OperatorID\": \"sl1686\"," +
+//                "\"OperatorSecret\": \"51F6F6CB7FD47B\"" +
 //                "}";
 //
 //        TestUtil.registerApplication()

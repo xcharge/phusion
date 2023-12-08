@@ -35,7 +35,7 @@ public class TestParkingLock {
 //    public void testAction() throws Exception {
 //        String endpointId = "performAction";
 //        String applicationConfig = "{\"serviceUrl\": \"https://newparking.litaparking.com/api/openapi/\"}";
-//        String connectionConfig = "{\"appId\":\"FJXih5ZwAW\", \"appKey\":\"ixtjFZdjfM8BXaAQGdsQ\"}";
+//        String connectionConfig = "{\"appId\":\"FJXih5\", \"appKey\":\"ixtjFZdjfM\"}";
 //
 //        String msg = "{\n" +
 //                "  \"lockId\": \"6688202000112701\",\n" +

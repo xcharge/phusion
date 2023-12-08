@@ -33,12 +33,12 @@ public class IssueCouponTest {
 //        String connectionConfig = "{" +
 //                "\"couponSource\": \"89001\"," +
 //                "\"clientId\": \"26185461\"," +
-//                "\"clientSecret\": \"frG1dgrpZPHpZXVhUcr7\"" +
+//                "\"clientSecret\": \"frG1dgr\"" +
 //                "}";
 //
 //        String msg = "{\n" +
-//                "  \"parkId\": \"10176SR7MPI01Z5\",\n" +
-//                "  \"carNo\": \"京ALG001\",\n" +
+//                "  \"parkId\": \"10176SR\",\n" +
+//                "  \"carNo\": \"京AL\",\n" +
 //                "  \"type\": 1,\n" +
 //                "  \"value\": 120\n" +
 //                "}";

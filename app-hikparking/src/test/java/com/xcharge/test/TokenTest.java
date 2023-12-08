@@ -37,8 +37,8 @@ public class TokenTest {
 //                "}";
 //
 //        String connectionConfig = "{" +
-//                "\"clientId\": \"26185461\"," +
-//                "\"clientSecret\": \"frG1dgrpZPHpZXVhUcr7\"" +
+//                "\"clientId\": \"261\"," +
+//                "\"clientSecret\": \"frG1dgrpZP\"" +
 //                "}";
 //
 //        TestUtil.registerApplication()

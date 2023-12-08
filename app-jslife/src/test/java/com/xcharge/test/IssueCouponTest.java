@@ -28,7 +28,7 @@ public class IssueCouponTest {
 //
 //        String applicationConfig = "{\"serviceUrl\": \"https://jtc-test.jslife.com.cn/jparking-api/charge/sync_order_deduct\"}";
 //
-//        String connectionConfig = "{\"appId\":\"4ba45c3f003611eab44d005056a1493e\", \"secret\":\"fecb2590003611eab44d005056a1493e\"}";
+//        String connectionConfig = "{\"appId\":\"4ba45c3f003611\", \"secret\":\"fecb2590003611eab44\"}";
 //
 //        String msg = "{\n" +
 //                "  \"requestId\": \"678539775491710976\",\n" +

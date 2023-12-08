@@ -25,14 +25,14 @@ public class IssueCouponTest {
 //        String applicationId = "ZhiAnSiChuang";
 //        String endpointId = "requestParkingDiscount";
 //
-//        String applicationConfig = "{\"serviceUrl\": \"http://yun.bolink.club/zld/chargingPile/syncChargePilePay\"}";
+//        String applicationConfig = "{\"serviceUrl\": \"http://yuntest.bolink.club/zld/chargingPile/syncChargePilePay\"}";
 //
-//        String connectionConfig = "{\"secret\":\"EB6X1Q6IA3UT5TJY\",\"unionId\":\"200129\"}";
+//        String connectionConfig = "{\"secret\":\"EB6X1Q6IA\",\"unionId\":\"200\"}";
 //
 //        String msg = "{\n" +
 //                "  \"requestId\": \"678539775491710976\",\n" +
 //                "  \"parkId\": \"131707\",\n" +
-//                "  \"carNo\": \"京AB21515\",\n" +
+//                "  \"carNo\": \"京AB21000\",\n" +
 //                "  \"extraInfo\": {\n" +
 //                "    \"startTime\": \"2023-10-18 13:50:01\",\n" +
 //                "    \"endTime\": \"2023-10-18 14:54:35\"\n" +

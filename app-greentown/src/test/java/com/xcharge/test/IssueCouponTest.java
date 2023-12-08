@@ -30,7 +30,7 @@ public class IssueCouponTest {
 //
 //        String applicationConfig = "{\"serviceUrl\": \"https://lydev-ipms.gttis.cc/couponNotice\"}";
 //
-//        String connectionConfig = "{\"OperatorID\":\"194400996\",\"OperatorSecret\":\"dVa5RXysztIHWJH0\",\"SecretKey\":\"ICxT5BNtVetuMJZf\",\"SecretIv\":\"pXzNnSZOUAAyzWgC\",\"SigSecret\":\"SFxv4yUssQ42GssK\"}";
+//        String connectionConfig = "{\"OperatorID\":\"194400996\",\"OperatorSecret\":\"dVa\",\"SecretKey\":\"ICxT\",\"SecretIv\":\"pXzNnSZ\",\"SigSecret\":\"SFxv4yU\"}";
 //
 //        String msg = "{\n" +
 //                "  \"requestId\": \"678539775491710976\",\n" +

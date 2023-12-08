@@ -34,7 +34,7 @@ public class TokenTest {
 //                "\"serviceUrl\": \"https://lydev-ipms.gttis.cc/couponNotice\"" +
 //                "}";
 //
-//        String connectionConfig = "{\"OperatorID\":\"194400996\",\"OperatorSecret\":\"dVa5RXysztIHWJH0\",\"SecretKey\":\"ICxT5BNtVetuMJZf\",\"SecretIv\":\"pXzNnSZOUAAyzWgC\",\"SigSecret\":\"SFxv4yUssQ42GssK\"}";
+//        String connectionConfig = "{\"OperatorID\":\"194400996\",\"OperatorSecret\":\"dVa5RXy\",\"SecretKey\":\"ICxT5BNtV\",\"SecretIv\":\"pXzNnSZO\",\"SigSecret\":\"SFxv4y\"}";
 //
 //        TestUtil.registerApplication()
 //                .setEngine(engine)

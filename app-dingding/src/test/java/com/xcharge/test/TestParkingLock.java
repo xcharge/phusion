@@ -70,7 +70,7 @@ public class TestParkingLock {
 //        String appConfig = "{}";
 //        String connectionConfig = "{\"client\": \""+clientId+"\"}";
 //
-//        String msg = "appId=ED135C702E&event=0&lockState=2&parkingState=1&lockNum=DNFE3C337CAEA0&outDeviceNum=4330113901&isOutLift=0&outLiftNum=232323&liftTime=20230523181818&timestamp=1678086750165&nonceStr=dfsfdsfdsfsf&sign=fdsfsfdsfsdfsdf";
+//        String msg = "appId=ED13&event=0&lockState=2&parkingState=1&lockNum=DNFE3C&outDeviceNum=4330113901&isOutLift=0&outLiftNum=232323&liftTime=20230523181818&timestamp=1678086750165&nonceStr=dfsfdsfdsfsf&sign=fdsfsfdsfsdfsdf";
 //
 //        String mockedResult = "{\"code\": \"ok\", \"desc\": \"SUCCESS\"}";
 //

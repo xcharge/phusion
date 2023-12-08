@@ -30,7 +30,7 @@ public class IssueCouponTest {
 //
 //        String applicationConfig = "{\"serviceUrl\": \"http://sysapitest.wit-parking.com/api/chargePlatform\"}";
 //
-//        String connectionConfig = "{\"OperatorID\":\"sl1686013294833oAsB\", \"OperatorSecret\":\"51F6F6CB7FD47B6EDFB29CB025261A44\"}";
+//        String connectionConfig = "{\"OperatorID\":\"sl168601329\", \"OperatorSecret\":\"51F6F6CB7FD47B6ED\"}";
 //
 //        String msg = "{\n" +
 //                "  \"requestId\": \"678539775491710976\",\n" +

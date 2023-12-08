@@ -28,7 +28,7 @@ public class IssueCouponTest {
 //
 //        String applicationConfig = "{\"serviceUrl\": \"http://ykt.test.cxyun.net.cn:7303/cxzn/interface/ChargeReduction\"}";
 //
-//        String connectionConfig = "{\"appKey\":\"b620f6be42328effc32b982a2b9\"}";
+//        String connectionConfig = "{\"appKey\":\"b620f6b\"}";
 //
 //        String msg = "{\n" +
 //                "  \"parkId\": \"5343054078414340259\",\n" +
