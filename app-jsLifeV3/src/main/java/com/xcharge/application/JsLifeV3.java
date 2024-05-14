@@ -25,7 +25,6 @@ public class JsLifeV3 extends HttpBaseApplication {
         String serviceUrl = getApplicationConfig().getString("serviceUrl");
         Engine engine = ctx.getEngine();
         JSONObject connConfig = getConnectionConfig(connectionId);
-        KVStorage storage = engine.getKVStorageForApplication(getId());
 
         String appId = connConfig.getString("appId");
         String cid = connConfig.getString("cid");
@@ -56,33 +55,4 @@ public class JsLifeV3 extends HttpBaseApplication {
             return new DataObject("{\"code\":\"500\", \"desc\":\"响应格式错误\"}");
         }
     }
-
-//    @InboundEndpoint(address = "/certificate/{filename}", connectionKeyInReqeust = "NONE")
-//    public void uploadCertificate(HttpRequest request, HttpResponse response, String[] integrationIds,
-//                                  String connectionId, Context ctx) throws Exception {
-//
-//        response.setStatusCode(200);
-//        response.setHeader("Content-Type", "text/plain");
-//
-//        if (request.getMethod().equals(HttpMethod.POST)) {
-//            String path = request.getParameter("filename");
-//            if (path != null && path.length() > 0) {
-//                if (request.hasFiles()) {
-//                    Set<String> fileNames = request.getFileNames();
-//                    FileStorage storage = ctx.getEngine().getFileStorageForApplication(getId());
-//                    path = "/certificates/" + path + ".pem";
-//
-//                    for (String f : fileNames) {
-//                        storage.saveToFile(path, request.getFileContent(f));
-//                        break; // 忽略后面的其它文件
-//                    }
-//
-//                    response.setBody(new DataObject("Done"));
-//                    return;
-//                }
-//            }
-//        }
-//
-//        response.setBody(new DataObject("Failed"));
-//    }
 }
