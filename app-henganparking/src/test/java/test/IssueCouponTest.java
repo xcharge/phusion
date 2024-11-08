@@ -4,7 +4,7 @@ import cloud.phusion.Engine;
 import cloud.phusion.dev.TestUtil;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
-import com.xcharge.application.GuoAn;
+import com.xcharge.application.HengAn;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -44,7 +44,7 @@ public class IssueCouponTest {
 
         TestUtil.registerApplication()
                 .setEngine(engine)
-                .setApplicationClass(GuoAn.class.getName())
+                .setApplicationClass(HengAn.class.getName())
                 .setApplicationId(applicationId)
                 .setApplicationConfig(applicationConfig)
                 .setConnectionConfig(connectionConfig)
