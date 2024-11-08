@@ -22,5 +22,6 @@ The implemented Phusion applications:
 | Jslife             | Application | parking lock service, 捷顺停车                 |
 | zhiansichuang      | Application | parking lock service, 智安思创                 |
 | LitaLock           | Application | parking lock service, 常成利他                 |
-| SkyParking         | Application | parking service, 速驿客停车                     |
+| SkyParking         | Application | parking service, 速驿客停车                 |
+| JslifeV3           | Application | parking service, 捷顺停车3C版                 |
 | GuoAnParking       | Application | parking service, 国安停车                      |
