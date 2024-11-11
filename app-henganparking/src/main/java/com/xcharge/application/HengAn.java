@@ -32,7 +32,7 @@ public class HengAn extends HttpBaseApplication {
         }
 
         HttpResponse response = http.post(serviceUrl)
-                .header("Content-Type", "com/xcharge/application/json; charset=UTF-8")
+                .header("Content-Type", "application/json; charset=UTF-8")
                 .body(new DataObject(objMsg))
                 .context(ctx)
                 .send();

@@ -25,3 +25,4 @@ The implemented Phusion applications:
 | SkyParking         | Application | parking service, 速驿客停车                 |
 | JslifeV3           | Application | parking service, 捷顺停车3C版                 |
 | GuoAnParking       | Application | parking service, 国安停车                      |
+| HengAnParking      | Application | parking service, 恒安停车                      |

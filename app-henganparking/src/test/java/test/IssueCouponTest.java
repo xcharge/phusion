@@ -23,17 +23,17 @@ public class IssueCouponTest {
 
     @Test
     public void testDiscount() throws Exception {
-        String applicationId = "guoan";
+        String applicationId = "hengan";
         String endpointId = "requestParkingDiscount";
 
-        String applicationConfig = "{\"serviceUrl\": \"http://api.aaa.com/bbb/ccc/server\"}";
+        String applicationConfig = "{\"serviceUrl\": \"http://beta.52tingche.com/park/zyb/couponTripartite/generalGrant\"}";
 
-        String connectionConfig = "{\"pid\":\"1234\",\"serviceName\":\"sendPlateTicket\",\"key\":\"56789\"}";
+        String connectionConfig = "{\"OperatorID\":\"test1\"}";
 
         String msg = "{\n" +
                 "  \"requestId\": \"678539775491710976\",\n" +
-                "  \"parkId\": \"aaaabbbccc\",\n" +
-                "  \"carNo\": \"京123456\",\n" +
+                "  \"parkId\": \"1338779870054248449\",\n" +
+                "  \"carNo\": \"鄂E99112\",\n" +
                 "  \"extraInfo\": {\n" +
                 "    \"startTime\": \"2023-10-18 13:50:01\",\n" +
                 "    \"endTime\": \"2023-10-18 14:54:35\"\n" +
