@@ -26,17 +26,17 @@ public class IssueCouponTest {
         String applicationId = "hengan";
         String endpointId = "requestParkingDiscount";
 
-        String applicationConfig = "{\"serviceUrl\": \"http://abc.abc.com/park/abc/abcc/abcc\"}";
+        String applicationConfig = "{\"serviceUrl\": \"http://abc.abc.com/park/abc/abc/abc\"}";
 
-        String connectionConfig = "{\"OperatorID\":\"abc\"}";
+        String connectionConfig = "{\"OperatorID\":\"test1\"}";
 
         String msg = "{\n" +
                 "  \"requestId\": \"abc\",\n" +
                 "  \"parkId\": \"abc\",\n" +
                 "  \"carNo\": \"abc\",\n" +
                 "  \"extraInfo\": {\n" +
-                "    \"startTime\": \"2024-10-18 13:50:01\",\n" +
-                "    \"endTime\": \"2024-10-18 14:54:35\"\n" +
+                "    \"startTime\": \"2024-11-13 13:50:01\",\n" +
+                "    \"endTime\": \"2024-11-13 14:54:35\"\n" +
                 "  },\n" +
                 "  \"type\": 1,\n" +
                 "  \"value\": 5\n" +
