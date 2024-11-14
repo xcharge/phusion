@@ -26,17 +26,17 @@ public class IssueCouponTest {
         String applicationId = "hengan";
         String endpointId = "requestParkingDiscount";
 
-        String applicationConfig = "{\"serviceUrl\": \"http://beta.52tingche.com/park/zyb/couponTripartite/generalGrant\"}";
+        String applicationConfig = "{\"serviceUrl\": \"http://abc.abc.com/park/abc/abcc/abcc\"}";
 
-        String connectionConfig = "{\"OperatorID\":\"test1\"}";
+        String connectionConfig = "{\"OperatorID\":\"abc\"}";
 
         String msg = "{\n" +
-                "  \"requestId\": \"678539775491710976\",\n" +
-                "  \"parkId\": \"1338779870054248449\",\n" +
-                "  \"carNo\": \"鄂E99112\",\n" +
+                "  \"requestId\": \"abc\",\n" +
+                "  \"parkId\": \"abc\",\n" +
+                "  \"carNo\": \"abc\",\n" +
                 "  \"extraInfo\": {\n" +
-                "    \"startTime\": \"2023-10-18 13:50:01\",\n" +
-                "    \"endTime\": \"2023-10-18 14:54:35\"\n" +
+                "    \"startTime\": \"2024-10-18 13:50:01\",\n" +
+                "    \"endTime\": \"2024-10-18 14:54:35\"\n" +
                 "  },\n" +
                 "  \"type\": 1,\n" +
                 "  \"value\": 5\n" +
