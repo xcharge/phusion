@@ -20,11 +20,11 @@ public class Transformer {
      * startTime	String	充电开始时间	必填yyyy-MM-dd HH:mm:SS
      * endTime	String	充电结束时间	必填yyyy-MM-dd HH:mm:ss
      */
-    public static JSONObject translateRequestMessage(JSONObject msg) throws Exception {
+    public static JSONObject translateRequestMessage(JSONObject msg, String operatorId) throws Exception {
         JSONObject result = new JSONObject();
         if (msg == null) msg = new JSONObject();
         result.put("parkId", msg.getString("parkId"));
-        result.put("OperatorID", msg.getString("tenantId"));
+        result.put("OperatorID", operatorId);
         result.put("orderNo", msg.getString("requestId"));
         result.put("plateNo", msg.getString("carNo"));
         JSONObject extraInfo = msg.getJSONObject("extraInfo");

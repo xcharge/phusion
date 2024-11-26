@@ -16,15 +16,17 @@ public class HengAn extends HttpBaseApplication {
     @OutboundEndpoint
     public DataObject requestParkingDiscount(DataObject msg, String integrationId, String connectionId, Context ctx) throws Exception {
         String serviceUrl = getApplicationConfig().getString("serviceUrl");
-        return new DataObject(_doRequest(msg, serviceUrl, ctx));
+        JSONObject config = getConnectionConfig(connectionId);
+        String operatorId = config.getString("OperatorID");
+        return new DataObject(_doRequest(msg, serviceUrl, operatorId, ctx));
     }
 
-    private JSONObject _doRequest(DataObject msg, String serviceUrl, Context ctx) throws Exception {
+    private JSONObject _doRequest(DataObject msg, String serviceUrl, String operatorId, Context ctx) throws Exception {
         HttpClient http = ctx.getEngine().createHttpClient();
         JSONObject objMsg;
 
         try {
-            objMsg = Transformer.translateRequestMessage(msg.getJSONObject());
+            objMsg = Transformer.translateRequestMessage(msg.getJSONObject(), operatorId);
         } catch (Exception ex) {
             ctx.logError(_position, "Failed to translate the message: " + msg.getString(), ex);
             return JSON.parseObject("{\"code\":\"501\", \"desc\":\"" + ex.getMessage() + "\"}");
