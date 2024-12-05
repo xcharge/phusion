@@ -35,7 +35,6 @@ public class Transformer {
 
         //配置信息
         request.put("app_id", appId);
-        request.put("app_auth_token", appAuthToken);
         request.put("outDiscountNo", msg.getString("requestId"));
         request.put("parkCode", msg.getString("parkId"));
         //订单信息
@@ -45,7 +44,7 @@ public class Transformer {
         request.put("discountTime", System.currentTimeMillis() / 1000);
 
         String signContent = Security.getSignContent(request);
-        String sign = Security.getSign(signContent, request.getString("app_auth_token"), request.getString("charset"), request.getString("sign_type"));
+        String sign = Security.getSign(signContent, appAuthToken, request.getString("charset"), request.getString("sign_type"));
         request.put("sign", sign);
         return request;
     }
