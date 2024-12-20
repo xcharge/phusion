@@ -27,3 +27,4 @@ The implemented Phusion applications:
 | GuoAnParking       | Application | parking service, 国安停车                      |
 | HengAnParking      | Application | parking service, 恒安停车                      |
 | ZhiWeiYunParking   | Application | parking service, 知位云停车                     |
+| BeiTouParking      | Application | parking service, 北投静态停车                    |
