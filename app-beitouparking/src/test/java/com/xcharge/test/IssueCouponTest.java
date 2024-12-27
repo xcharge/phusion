@@ -27,14 +27,14 @@ public class IssueCouponTest {
         String applicationId = "BeiTou";
         String endpointId = "requestParkingDiscount";
 
-        String applicationConfig = "{\"serviceUrl\": \"https://parking.big-btjtjt.com/start/\"}";
+        String applicationConfig = "{\"serviceUrl\": \"https://abc.abc-abc.com/aaa/\"}";
 
-        String connectionConfig = "{\"key\":\"DTEST\",\"secret\":\"A95A84BB4705423C8F3C59A6DCF12345\"}";
+        String connectionConfig = "{\"key\":\"AAA\",\"secret\":\"123123123\"}";
 
         String msg = "{\n" +
-                "  \"requestId\": \"969696268654223360\",\n" +
+                "  \"requestId\": \"1111\",\n" +
                 "  \"parkId\": \"aaaabbbccc\",\n" +
-                "  \"carNo\": \"京ABC123\",\n" +
+                "  \"carNo\": \"abcv\",\n" +
                 "  \"extraInfo\": {\n" +
                 "    \"startTime\": \"2016-11-04 16:56:50\",\n" +
                 "    \"endTime\": \"2023-10-18 14:54:35\"\n" +
