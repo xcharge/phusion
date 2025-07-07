@@ -24,3 +24,4 @@ The implemented Phusion applications:
 | LitaLock           | Application | parking lock service, 常成利他                 |
 | SkyParking         | Application | parking service, 速驿客停车                 |
 | JslifeV3           | Application | parking service, 捷顺停车3C版                 |
+| hmzhtc             | Application | parking service, 红门智慧停车                 |
