@@ -38,8 +38,17 @@ public class Transformer {
         request.put("outDiscountNo", msg.getString("requestId"));
         request.put("parkCode", msg.getString("parkId"));
         //订单信息
-        request.put("discountType", 2);
-        request.put("discountNumber", "135");
+        int discountType = msg.getIntValue("type", 1);
+        if (discountType == 1) { // 按时长优惠
+            request.put("discountType", 2);
+            request.put("discountNumber", msg.getIntValue("value", 0));
+        } else if (discountType == 0) {
+            // 按金额优惠
+            request.put("discountType", 3);
+            request.put("discountNumber", msg.getIntValue("value", 0) / 100.0);
+        } else {
+            throw new Exception("不支持的优惠类型");
+        }
         request.put("plateNum", msg.getString("carNo"));
         request.put("discountTime", System.currentTimeMillis() / 1000);
 
