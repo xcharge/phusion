@@ -30,5 +30,4 @@ The implemented Phusion applications:
 | BeiTouParking      | Application | parking service, 北投静态停车                    |
 | hmzhtc             | Application | parking service, 红门智慧停车                 |
 | LiFangParking      | Application | parking service, 立方停车                 |
-|
-| HaoTingChe         | Application | parking service, 好停车  
+| HaoTingChe         | Application | parking service, 好停车   
